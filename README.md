@@ -19,4 +19,4 @@ Tecnologías:
 
 # Mockup
 
-(./src/assets/Mockup.png)
+![Boceto inicial](./src/assets/Mockup.png)
