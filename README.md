@@ -16,3 +16,7 @@ Tecnologías:
 - HTML y CSS   
 - PokéAPI (https://pokeapi.co/)
 - Trello
+
+# Mockup
+
+(./src/assets/Mockup.png)
