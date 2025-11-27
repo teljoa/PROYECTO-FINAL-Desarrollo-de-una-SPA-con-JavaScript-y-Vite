@@ -1,5 +1,6 @@
 const STORAGE_KEY = "pokemon_user";
 
+//Función que simula un login sin backend real.
 export function login(username, password) {
   const user = mockUsers.find(
     u => u.username === username && u.password === password
@@ -12,14 +13,17 @@ export function login(username, password) {
   return true;
 }
 
+//Cierra la sesión del usuario eliminando su registro de localStorage.
 export function logout() {
   localStorage.removeItem(STORAGE_KEY);
 }
 
+//Verifica si hay un usuario guardado en localStorage.
 export function isLoggedIn() {
   return localStorage.getItem(STORAGE_KEY) !== null;
 }
 
+//Devuelve los datos del usuario actualmente logueado.
 export function getCurrentUser() {
   const data = localStorage.getItem(STORAGE_KEY);
   return data ? JSON.parse(data) : null;

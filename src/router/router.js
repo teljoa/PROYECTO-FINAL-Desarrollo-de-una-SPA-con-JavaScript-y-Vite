@@ -13,11 +13,13 @@ const routes = {
   "/favorites": Favorites
 };
 
+//Inicializa las rutas
 export function initRouter() {
   window.addEventListener("hashchange", () => router());
   router(); 
 }
 
+//Dectertar rutas dinamicas
 function parseRoute(hash) {
   const cleanHash = hash.replace("#", "") || "/";
   const routeParts = cleanHash.split("/").filter(Boolean);
@@ -35,6 +37,7 @@ function parseRoute(hash) {
   };
 }
 
+//Si la ruta no existe, te mando a 404
 function router() {
   const hash = window.location.hash || "#/";
   const { path, params } = parseRoute(hash);
