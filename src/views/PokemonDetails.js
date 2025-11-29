@@ -3,7 +3,7 @@ import Loader from "../components/Loader.js";
 
 export default function PokemonDetails(params) {
   const container = document.createElement("div");
-  container.className = "pokemon-details";
+  container.className = "pokemon-details center";
 
   container.appendChild(Loader());
 

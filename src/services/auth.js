@@ -1,5 +1,12 @@
 const STORAGE_KEY = "pokemon_user";
 
+const mockUsers = [
+  { username: "ash", password: "pikachu" },
+  { username: "misty", password: "togepi" },
+  { username: "brock", password: "onix" },
+  { username: "admin", password: "1234" }
+];
+
 //Función que simula un login sin backend real.
 export function login(username, password) {
   const user = mockUsers.find(

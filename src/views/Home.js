@@ -1,6 +1,6 @@
 export default function Home() {
   const container = document.createElement("div");
-  container.className = "home";
+  container.className = "home center";
 
   container.innerHTML = `
     <h1>Enciclopedia Pokémon</h1>

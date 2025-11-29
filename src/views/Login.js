@@ -2,7 +2,7 @@ import { login, isLoggedIn } from "../services/auth.js";
 
 export default function Login() {
   const container = document.createElement("div");
-  container.className = "login";
+  container.className = "login center";
 
   if (isLoggedIn()) {
     container.innerHTML = `<p>Ya estás logueado.</p>`;
