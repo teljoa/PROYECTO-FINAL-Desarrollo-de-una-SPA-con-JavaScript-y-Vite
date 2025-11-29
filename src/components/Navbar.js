@@ -5,7 +5,7 @@ export default function Navbar() {
   nav.innerHTML = `
     <div class="nav-logo">
       <img src="./src/assets/Logo.png" alt="Logo Pokémon">
-      <span>Pokédex JSVite</span>
+      <span><a href="#/">Pokédex JSVite</a></span>
     </div>
 
     <div class="nav-links">

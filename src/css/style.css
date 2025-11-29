@@ -19,9 +19,12 @@ body {
 
 main#view {
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   max-width: 1000px;
   margin: auto;
+  overflow-y: auto; 
 }
 
 nav {
@@ -67,7 +70,6 @@ footer {
   padding: 10px;
   text-align: center;
   color: white;
-  margin-top: auto;
 }
 
 .btn {
@@ -235,4 +237,75 @@ h2 {
 
 .search:focus {
   outline: 2px solid #42a5f5;
+}
+
+.pokemon-details {
+  max-width: 900px;
+  margin: auto;
+}
+
+.details-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.details-left img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.details-right {
+  text-align: left;
+  min-width: 200px;
+}
+
+.details-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 25px;
+}
+
+.fav-icon {
+  cursor: pointer;
+  margin-left: 15px;
+  font-size: 28px;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.fav-icon.fav {
+  color: #ffeb3b;
+  transform: scale(1.2);
+}
+
+.details-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.details-header h2 {
+  margin: 0;
+}
+
+.details-header .fav-icon {
+  font-size: 32px;
+  position: static;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.details-header .fav-icon.fav {
+  color: #ffeb3b;
 }
